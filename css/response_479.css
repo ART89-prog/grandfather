@@ -1,0 +1,217 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 21px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 16px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion .accordion_item .head
+    {
+        padding: 16px 68px 16px 20px;
+    }
+
+
+    .accordion .accordion_item .head .title
+    {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+
+    .accordion .accordion_item .head .icon
+    {
+        right: 20px;
+    }
+
+
+    .accordion .accordion_item .data
+    {
+        margin: 0 20px 20px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .info
+    {
+        padding: 24px 28px 28px;
+    }
+
+
+
+    .first_section.mini .info
+    {
+        padding: 24px;
+    }
+
+    .first_section.mini .info:after
+    {
+        left: 24px;
+    }
+
+    .first_section.mini .info .title
+    {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .article .name
+    {
+        padding: 20px 24px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*---------------
+        Suppliers
+    ---------------*/
+    .suppliers .row > *
+    {
+        width: calc(50% - 12px);
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .block_head,
+    .action_form .form
+    {
+        padding: 32px;
+    }
+
+
+
+    .action_form .data.big_pad
+    {
+        padding: 32px;
+    }
+
+
+
+    /*------------------
+        Social block
+    ------------------*/
+    .social_block .link
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        text-align: center;
+    }
+
+
+    .social_block .link .icon
+    {
+        margin: 0 auto 16px;
+    }
+
+    .social_block .link .icon + *
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .social_block .link br
+    {
+        display: none;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .section
+    {
+        padding: 24px;
+    }
+
+
+    .contacts_info .feedback
+    {
+        padding: 28px 32px 32px;
+    }
+
+
+
+    /*---------------
+        Vacancies
+    ---------------*/
+    .vacancy_info
+    {
+        padding: 20px 24px 24px;
+    }
+
+
+    .vacancy_info .respond_btn
+    {
+        width: 100%;
+        margin-top: 28px;
+    }
+
+
+
+    /*-----------
+        Files
+    -----------*/
+    .files .row
+    {
+        margin-left: 0;
+    }
+
+    .files .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,676 @@
+@media print, (max-width: 1187px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 30px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 32px;
+    }
+
+
+
+    /*---------------
+        Load more
+    ---------------*/
+    .load_more
+    {
+        margin-top: 36px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion .accordion_item + .accordion_item
+    {
+        margin-top: 20px;
+    }
+
+
+    .accordion .accordion_item .head
+    {
+        padding: 24px 92px 24px 32px;
+    }
+
+
+    .accordion .accordion_item .head .title
+    {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+
+    .accordion .accordion_item .head .icon
+    {
+        right: 32px;
+    }
+
+
+    .accordion .accordion_item .data
+    {
+        margin: 0 32px 32px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        margin-bottom: 28px;
+    }
+
+
+    .tabs button
+    {
+        font-size: 22px;
+        line-height: 26px;
+
+        height: 92px;
+        padding: 12px 20px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo img
+    {
+        height: 48px;
+    }
+
+    header .logo img + img
+    {
+        height: 28px;
+        margin-left: 12px;
+    }
+
+
+    header .menu .item + .item
+    {
+        margin-left: 28px;
+    }
+
+    header .menu .item > a
+    {
+        height: 72px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 32px;
+    }
+
+    .block_head.border
+    {
+        margin-bottom: 32px;
+        padding-bottom: 24px;
+    }
+
+
+    .block_head .desc
+    {
+        margin-top: 20px;
+    }
+
+
+    .block_head .all_link a
+    {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .columns
+    {
+        column-gap: 40px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .first_section
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .first_section .info
+    {
+        width: 600px;
+        margin-left: 0;
+        padding: 52px;
+    }
+
+    .first_section .info:before
+    {
+        top: -24px;
+        right: -24px;
+
+        width: 184px;
+        height: 124px;
+    }
+
+    .first_section .info:after
+    {
+        right: 52px;
+    }
+
+
+    .first_section .info .title
+    {
+        font-size: 30px;
+        line-height: calc(100% + 6px);
+    }
+
+
+    .first_section .info .desc
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        width: 476px;
+        margin-top: 24px;
+    }
+
+
+    .first_section .info .link
+    {
+        font-size: 16px;
+        line-height: 20px;
+
+        margin-top: 32px;
+        padding: 16px 28px;
+    }
+
+
+
+    .first_section.mini
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .first_section .cont
+    {
+        min-height: 0;
+        padding-top: 200px;
+    }
+
+
+    .first_section.mini .info
+    {
+        width: 500px;
+        margin-left: 0;
+        padding: 32px;
+    }
+
+    .first_section.mini .info:before
+    {
+        top: -24px;
+        right: -24px;
+
+        width: 184px;
+        height: 124px;
+        max-height: calc(100% + 24px);
+    }
+
+    .first_section.mini .info:after
+    {
+        right: 40px;
+    }
+
+    .first_section.mini .info .title
+    {
+        font-size: 23px;
+        line-height: 28px;
+    }
+
+    .first_section.mini .info .desc
+    {
+        font-size: 14px;
+        line-height: 17px;
+
+        margin-top: 8px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles
+    {
+        margin-bottom: 80px;
+    }
+
+    .articles.min_margin
+    {
+        margin-bottom: 64px;
+    }
+
+
+    .articles .row.big_offset
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .articles .row.big_offset > *
+    {
+        width: calc(25% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .articles .article .name
+    {
+        line-height: 18px;
+
+        padding: 20px 24px;
+    }
+
+
+
+    /*--------------------
+        Our production
+    --------------------*/
+    .our_production
+    {
+        margin-bottom: 80px;
+        padding-top: 80px;
+    }
+
+
+    .our_production .data
+    {
+        width: calc(50% - 25px);
+    }
+
+
+    .our_production .data .link
+    {
+        margin-top: 32px;
+    }
+
+    .our_production .data .link a
+    {
+        font-size: 16px;
+        line-height: 20px;
+
+        padding: 16px 28px;
+    }
+
+
+
+    /*-----------
+        About
+    -----------*/
+    .about
+    {
+        margin-bottom: 80px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        margin-bottom: 80px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .advantages .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .advantages .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .advantages .item
+    {
+        padding: 1px 27px 27px;
+    }
+
+    .advantages .item .icon
+    {
+        width: 76px;
+        height: 76px;
+        margin-bottom: 28px;
+    }
+
+    .advantages .item .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*---------------
+        Suppliers
+    ---------------*/
+    .suppliers
+    {
+        margin-bottom: 80px;
+        padding: 72px 0 80px;
+    }
+
+
+    .suppliers .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+        padding-top: 8px;
+    }
+
+    .suppliers .row > *
+    {
+        width: calc(20% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .suppliers .item
+    {
+        height: 92px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .data
+    {
+        padding: 40px 40px 0 52px;
+    }
+
+
+
+    .action_form .data.big_pad
+    {
+        padding: 52px;
+    }
+
+
+    .action_form .block_head.full_w
+    {
+        margin-bottom: 44px;
+    }
+
+
+    .action_form .form.full_w .line
+    {
+        margin-right: 24px;
+    }
+
+
+
+    /*------------------
+        Social block
+    ------------------*/
+    .social_block
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .social_block .link
+    {
+        font-size: 22px;
+        line-height: 30px;
+
+        padding: 52px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .contacts_info .grid
+    {
+        grid-gap: 20px;
+    }
+
+
+    .contacts_info .section
+    {
+        padding: 28px;
+    }
+
+    .contacts_info .section .title
+    {
+        font-size: 18px;
+        line-height: 23px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .contacts_info .emails .row
+    {
+        margin-left: -76px;
+    }
+
+    .contacts_info .emails .row > *
+    {
+        width: calc(50% - 76px);
+        margin-left: 76px;
+    }
+
+
+    .contacts_info .feedback
+    {
+        padding: 32px 40px 40px;
+    }
+
+    .contacts_info .feedback:after
+    {
+        top: -24px;
+        right: -24px;
+
+        width: 184px;
+        height: 124px;
+    }
+
+    .contacts_info .feedback .title
+    {
+        font-size: 22px;
+        line-height: 26px;
+
+        margin-bottom: 24px;
+    }
+
+
+
+    /*---------------
+        Vacancies
+    ---------------*/
+    .vacancies
+    {
+        margin-bottom: 80px;
+    }
+
+
+
+    .vacancy_info
+    {
+        padding: 32px 40px 36px;
+    }
+
+    .vacancy_info .section .title
+    {
+        font-size: 15px;
+        line-height: 18px;
+
+        margin-bottom: 16px;
+    }
+
+
+
+    /*----------------------
+        Commercial offer
+    ----------------------*/
+    .сommercial_offer table th
+    {
+        padding-bottom: 24px;
+        padding-left: 24px;
+    }
+
+
+    .сommercial_offer table td
+    {
+        min-width: 140px;
+        height: 76px;
+        padding: 12px 0 12px 24px;
+    }
+
+
+
+    /*-----------
+        Files
+    -----------*/
+    .files
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .files .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .files .row > *
+    {
+        width: calc(25% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .files .item
+    {
+        padding: 23px 31px 23px 23px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 60px 0 52px;
+    }
+
+
+    footer .col_left
+    {
+        display: flex;
+
+        width: 100%;
+
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    footer .socials,
+    footer .privacy_policy_link
+    {
+        margin-top: 0;
+    }
+
+
+    footer .menu
+    {
+        margin-top: 32px;
+    }
+
+    footer .menu > * + *
+    {
+        margin-top: 15px;
+    }
+
+
+    footer .contacts
+    {
+        width: calc(64% - 12px);
+        margin-top: 32px;
+    }
+}
