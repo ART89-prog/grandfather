@@ -1,4 +1,4 @@
-@media print, (max-width: 1600px) {
+@media print, (max-width: 1520px) {
 
     :root {
         --font_size: 15px;
@@ -8,12 +8,12 @@
         width: 5px;
         height: 5px;
     }
-    .slick-slider {
-        width: 430px;
+    .slider .slick-slider.slider-for {
+        width: 532px;
         height: 594px;    
     }
     .slider .slider-slide {
-        width: 430px !important;
+        width: 532px !important;
         height: 594px;        
     }
     .slider .slider-thumbs {
@@ -21,8 +21,11 @@
         height: 80px;
     } 
     .slider .slick-list {
-        width: 430px;
+        width: 532px;
         margin-right: 50px;
+    }
+    .slider .slider-slide img {
+        width: 100%;
     }
     .slider .slider-nav .slick-slide {
         padding: 0 3px;        

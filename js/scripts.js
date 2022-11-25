@@ -20,7 +20,7 @@ $(() => {
         focusOnSelect: true,
         responsive: [
           {
-            breakpoint: 1450,
+            breakpoint: 1520,
             settings: {
               slidesToShow: 5,
               slidesToScroll: 1,
@@ -28,16 +28,24 @@ $(() => {
             }
           },
           {
+            breakpoint: 1279,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+          {
             breakpoint: 767,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 3,
               slidesToScroll: 1
             }
           },
           {
             breakpoint: 479,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 2,
               slidesToScroll: 1
             }
           }
@@ -69,7 +77,14 @@ $(() => {
               }
             },
             {
-              breakpoint: 767,
+              breakpoint: 1520,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 1279,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1

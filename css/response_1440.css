@@ -1,0 +1,19 @@
+@media print, (max-width: 1440px) {
+
+    .first-section_info.nc2 .first-section_text {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .first-section_slider .slick-slide {
+        padding: 0 5px;
+    }
+    .first_slider-item {
+        min-height: 280px;
+    }
+    
+
+
+
+
+
+}

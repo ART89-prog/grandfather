@@ -1,0 +1,62 @@
+@media print, (max-width: 1279px) {
+
+    .slider .slick-slider.slider-for {
+        width: 410px;
+        height: 458px;    
+    }
+    .slider .slider-slide {
+        width: 410px !important;
+        height: auto;        
+    }
+    .slider .slider-thumbs {
+        width: 80px;
+        height: 80px;
+    } 
+    .slider .slick-list {
+        width: 410px;
+        margin-right: 40px;
+    }
+    .info_item:first-child .info_item-date:before {
+        width: 40px;
+        right: -58px;
+    }
+    .info_items {
+        max-width: 400px;
+        width: 100%;
+    }
+    .right_block {
+        width: calc(100% - 450px);
+        margin-left: 450px;
+    }
+    .first-section_img {
+        display: none;
+    }
+    .body_img {
+        display: none;
+    }
+    .block {
+        margin-bottom: 50px;
+    }
+    .title {
+        margin-bottom: 16px;
+    }
+    .reward_item-title {
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+    .reward_item-link {
+        margin-top: 8px;
+    }
+    header::after {
+        left: -20px;
+    } 
+    .main {
+        padding: 0 20px;
+    }
+
+
+
+
+
+}

@@ -1,648 +1,93 @@
-@media print, (max-width: 1023px)
-{
-    /*-------------------
-        Global styles
-    -------------------*/
-    :root
-    {
-        --font_size: 14px;
-        --font_size_title: 27px;
-    }
+@media print, (max-width: 1023px) {
 
-
-
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
-    {
-        padding: 24px;
-    }
-
-
-
-    /*---------------
-        Load more
-    ---------------*/
-    .load_more .btn
-    {
-        font-size: 15px;
-    }
-
-
-
-    /*---------------
-        Accordion
-    ---------------*/
-    .accordion .accordion_item .head
-    {
-        padding: 20px 80px 20px 28px;
-    }
-
-
-    .accordion .accordion_item .head .title
-    {
-        font-size: 17px;
-        line-height: 22px;
-    }
-
-
-    .accordion .accordion_item .head .icon
-    {
-        right: 28px;
-    }
-
-
-    .accordion .accordion_item .data
-    {
-        margin: 0 28px 28px;
-    }
-
-
-
-    /*----------
-        Tabs
-    ----------*/
-    .tabs
-    {
-        margin-bottom: 24px;
-    }
-
-
-    .tabs button
-    {
-        font-size: 19px;
-        line-height: 24px;
-
-        height: 80px;
-    }
-
-
-
-    /*------------
-        Header
-    ------------*/
-    header
-    {
-        z-index: auto;
-
-        padding: 12px 0;
-    }
-
-
-    header .mob_menu_btn
-    {
-        display: flex;
-    }
-
-
-    header .menu
-    {
-        position: fixed;
-        z-index: 101;
-        top: 0;
-        left: 0;
-
-        display: flex;
-        overflow: auto;
-
-        width: 310px;
-        height: 100%;
-        min-height: -moz-available;
-        min-height: -webkit-fill-available;
-        min-height:         fill-available;
-        margin: 0;
-        padding: 48px 20px;
-
-        transition: transform .3s linear;
-        transform: translateX(-100%);
-
-        background: #fff;
-
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
-    }
-
-    header .menu.show
-    {
-        transform: translateX(0);
-    }
-
-
-    header .menu .close_btn
-    {
-        display: flex;
-    }
-
-
-    header .menu .item
-    {
-        width: 100%;
-    }
-
-    header .menu .item + .item
-    {
-        margin-left: 0;
-    }
-
-    header .menu .item > a
-    {
-        display: block;
-
-        height: auto;
-        padding: 8px 0;
-
-        text-align: left;
-    }
-
-
-
-    /*----------------
-        Block head
-    ----------------*/
-    .block_head
-    {
-        margin-bottom: 28px;
-    }
-
-    .block_head.border
-    {
-        margin-bottom: 28px;
-        padding-bottom: 20px;
-    }
-
-
-    .block_head .all_link a
-    {
-        line-height: 28px;
-    }
-
-
-
-    /*----------------
-        Typography
-    ----------------*/
-    .text_block .columns
-    {
-        column-gap: 0;
-        column-count: 1;
-    }
-
-
-
-    /*-------------------
-        First section
-    -------------------*/
-    .first_section
-    {
-        margin-bottom: 72px;
-    }
-
-
-    .first_section .info
-    {
-        width: 480px;
-        padding: 40px;
-    }
-
-    .first_section .info .title
-    {
-        font-size: 27px;
-    }
-
-    .first_section .info .desc
-    {
-        font-size: 15px;
-        line-height: 18px;
-
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .first_section .info .link
-    {
-        font-size: 15px;
-        line-height: 18px;
-
-        margin-top: 28px;
-    }
-
-
-
-    /*--------------
-        Articles
-    --------------*/
-    .articles
-    {
-        margin-bottom: 72px;
-    }
-
-    .articles.min_margin
-    {
-        margin-bottom: 60px;
-    }
-
-
-    .articles .row > *
-    {
-        width: calc(50% - 2px);
-    }
-
-
-    .articles .article .thumb
-    {
-        padding-bottom: 65%;
-    }
-
-    .articles .article .name
-    {
-        padding: 24px 28px;
-    }
-
-
-    .articles .row.big_offset > *
-    {
-        width: calc(50% - 20px);
-    }
-
-
-
-    /*--------------------
-        Our production
-    --------------------*/
-    .our_production
-    {
-        margin-bottom: 72px;
-        padding-top: 72px;
-    }
-
-
-    .our_production .data
-    {
-        width: 100%;
-    }
-
-    .our_production .data .link a
-    {
-        font-size: 15px;
-        line-height: 18px;
-    }
-
-
-    .our_production .image
-    {
-        width: 555px;
-        margin-top: 40px;
-        padding-bottom: 540px;
-    }
-
-
-
-    /*-----------
-        About
-    -----------*/
-    .about
-    {
-        margin-bottom: 72px;
-    }
-
-
-
-    /*----------------
-        About info
-    ----------------*/
-    .about_info
-    {
-        margin-bottom: 72px;
-    }
-
-
-    .about_info .data,
-    .about_info .text_block
-    {
-        width: 100%;
-        max-width: 100%;
-    }
-
-
-    .about_info .image
-    {
-        width: 555px;
-        max-width: 100%;
-        margin-top: 32px;
-        margin-left: 0;
-    }
-
-
-
-    /*----------------
-        Advantages
-    ----------------*/
-    .advantages
-    {
-        margin-bottom: 72px;
-    }
-
-
-    .advantages .row
-    {
-        margin-bottom: -20px;
-        margin-left: -20px;
-    }
-
-    .advantages .row > *
-    {
-        width: calc(33.333% - 20px);
-        margin-bottom: 20px;
-        margin-left: 20px;
-    }
-
-
-    .advantages .item
-    {
-        font-size: 13px;
-        line-height: 18px;
-
-        padding: 1px 19px 23px;
-    }
-
-    .advantages .item .icon
-    {
-        width: 72px;
-        height: 72px;
-        margin-bottom: 24px;
-        padding: 16px;
-    }
-
-    .advantages .item .name
-    {
-        font-size: 16px;
-        line-height: 22px;
-    }
-
-    .advantages .item .name br
-    {
-        display: none;
-    }
-
-
-
-    /*---------------
-        Suppliers
-    ---------------*/
-    .suppliers
-    {
-        margin-bottom: 72px;
-        padding: 64px 0 72px;
-    }
-
-
-    .suppliers .row
-    {
-        margin-bottom: -16px;
-        margin-left: -16px;
-    }
-
-    .suppliers .row > *
-    {
-        width: calc(25% - 16px);
-        margin-bottom: 16px;
-        margin-left: 16px;
-    }
-
-
-    .suppliers .item
-    {
-        height: 80px;
-    }
-
-
-
-    /*-----------------
-        Action form
-    -----------------*/
-    .action_form
-    {
-        margin-bottom: 72px;
-    }
-
-
-
-    .action_form .data
-    {
-        padding: 40px;
-    }
-
-
-    .action_form .block_head
-    {
-        width: 100%;
-        max-width: calc(100% - 340px);
-    }
-
-    .action_form .block_head .title br
-    {
-        display: none;
-    }
-
-
-    .action_form .form
-    {
-        width: 340px;
-        margin: -40px;
-        padding: 40px;
-    }
-
-
-    .action_form .data.big_pad
-    {
-        padding: 40px;
-    }
-
-
-    .action_form .form.full_w
-    {
-        width: calc(100% + 24px);
-        margin: 0 0 0 -24px;
-
-        flex-wrap: wrap;
-    }
-
-    .action_form .form.full_w .line
-    {
-        width: calc(33.333% - 24px);
+    .left_block {
+        position: relative;
         margin-right: 0;
-        margin-bottom: 22px;
-        margin-left: 24px;
+        margin: 165px auto 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
-    .action_form .form.full_w .line.agree
-    {
-        margin-bottom: 0;
+    .main {
+        flex-direction: column;
     }
-
-
-
-    /*------------------
-        Social block
-    ------------------*/
-    .social_block
-    {
-        margin-bottom: 72px;
+    .right_block {
+        width: 100%;
+        margin-left: 0px;
     }
-
-
-    .social_block .link
-    {
-        font-size: 20px;
-        line-height: 28px;
-
-        padding: 40px;
+    header {
+        top: 20px;
+        width: 100%;
+        right: 20px;
+        left: 0px;
     }
-
-    .social_block .link .icon
-    {
-        width: 64px;
-        height: 64px;
+    header nav {
+        justify-content: end;
         margin-right: 20px;
     }
-
-
-
-    /*-------------------
-        Contacts info
-    -------------------*/
-    .contacts_info
-    {
-        margin-bottom: 72px;
+    .header_name {
+        text-align: center;
     }
-
-
-    .contacts_info .grid
-    {
-        grid-template-columns: repeat(2, 1fr);
+    .slider .slick-slider.slider-nav .slick-list {
+        margin-right: 0;
     }
-
-
-    .contacts_info .feedback
-    {
-        margin-top: 24px;
-        padding: 52px 60px 60px;
-
-        grid-column: 1 / 3;
-        grid-row: auto / auto;
+    .info_items {
+        margin-top: 20px;
     }
-
-
-
-    /*---------------
-        Vacancies
-    ---------------*/
-    .vacancies
-    {
-        margin-bottom: 72px;
+    .first-section_info {
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
-
-
-    .vacancy_info
-    {
-        padding: 28px 32px 32px;
+    .first-section_info.nc2 .first-section_text {
+        font-size: 16px;
+        line-height: 24px;
     }
-
-    .vacancy_info .respond_btn
-    {
-        font-size: 15px;
-        line-height: 18px;
-
-        margin-top: 32px;
-        padding: 14px 28px;
-    }
-
-
-
-    /*----------------------
-        Commercial offer
-    ----------------------*/
-    .сommercial_offer
-    {
-        margin-bottom: 72px;
-    }
-
-
-    .сommercial_offer table th
-    {
-        padding-bottom: 20px;
-        padding-left: 20px;
-
-        white-space: nowrap;
-    }
-
-
-    .сommercial_offer table td
-    {
-        min-width: 100px;
-        height: 72px;
-        padding: 12px 0 12px 20px;
-    }
-
-
-
-    /*-----------
-        Files
-    -----------*/
-    .files
-    {
-        margin-bottom: 72px;
-    }
-
-
-    .files .row
-    {
-        margin-bottom: -16px;
-        margin-left: -16px;
-    }
-
-    .files .row > *
-    {
-        width: calc(33.333% - 16px);
-        margin-bottom: 16px;
-        margin-left: 16px;
-    }
-
-
-    .files .item
-    {
-        padding: 19px 31px 19px 19px;
-    }
-
-    .files .item .icon
-    {
-        right: 15px;
-        bottom: 15px;
-    }
-
-
-
-    /*------------
-        Footer
-    ------------*/
-    footer
-    {
-        padding: 52px 0 40px;
-    }
-
-
-    footer .menu
-    {
+    .first_slider-item_title br {
         display: none;
     }
-
-
-    footer .contacts
-    {
-        width: calc(100% - 22px);
-        margin-left: auto;
+    .first_slider-item {
+        min-height: 260px;
     }
+    .title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .block {
+        margin-bottom: 40px;
+    }
+    .first-section_title {
+        margin-bottom: 8px;
+    }
+    footer {
+        margin-top: 80px;
+    }
+    .patent_item-wrap > * {
+        margin-left: 15px;
+    }
+    .patent_item-text {
+        margin-bottom: 8px;
+        line-height: 1.5;
+    }
+    .patent_item-title {
+        margin-bottom: 8px;
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 20px;
+    }
+    .footer_text {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 8px;
+    }
+    .first-section_info.nc2 .first-section_text {
+        width: 100%;
+    }
+    
+
+ 
+
+
+
+
+   
 }
