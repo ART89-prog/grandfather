@@ -24,7 +24,7 @@
 		<!-- Подключение шрифтов с гугла -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Noto+Serif:wght@400;700&family=Roboto+Slab&display=swap" rel="stylesheet">
 
 		<!-- Подключение файлов стилей -->
 		<link rel="stylesheet" href="css/slick-theme.css">
@@ -111,25 +111,23 @@
 				</div>
 				<div class="right_block">
 					<header>
-						<div class="cont">
-							<nav>
-								<div class="item">
-									<a href="#biography" class="scroll">Биография</a>
-								</div>
-								<div class="item">
-									<a href="#rout" class="scroll">Боевой путь</a>
-								</div>
-								<div class="item">
-									<a href="#reward" class="scroll">Награды</a>
-								</div>
-								<div class="item">
-									<a href="#patent" class="scroll">Патенты</a>
-								</div>
-							</nav>
-						</div>
+						<nav>
+							<div class="item">
+								<a href="#biography" class="scroll">Биография</a>
+							</div>
+							<div class="item">
+								<a href="#rout" class="scroll">Боевой путь</a>
+							</div>
+							<div class="item">
+								<a href="#reward" class="scroll">Награды</a>
+							</div>
+							<div class="item">
+								<a href="#patent" class="scroll">Патенты</a>
+							</div>
+						</nav>
 					</header>
 
-					<section class="first-section">
+					<section class="first-section block">
 						<div class="first-section_name">Помелов<br>	Анатолий Григорьевич</div>
 						<div class="first-section_info">
 							<div class="first-section_title">Биография</div>
@@ -148,7 +146,7 @@
 
 						<div class="first-section_slider">
 							<div class="first-section_slider-head">
-								<div class="first-section_title">Боевой путь</div>
+								<div class="first-section_title">Награды</div>
 								<div class="slider-arrows"></div>								
 							</div>
 							<div class="first_slider-items">
@@ -171,7 +169,7 @@
 									</div>
 								</div>
 								<div class="first_slider-item">
-									<div class="first_slider-item_img">
+									<div class="first_slider-item_img mt">
 										<img src="images/reward3.png" alt="">
 									</div>
 									<div class="first_slider-item_info">
@@ -180,7 +178,7 @@
 									</div>
 								</div>
 								<div class="first_slider-item">
-									<div class="first_slider-item_img">
+									<div class="first_slider-item_img mt">
 										<img src="images/reward4.png" alt="">
 									</div>
 									<div class="first_slider-item_info">
@@ -221,10 +219,12 @@
 
 					<section class="route block" id="rout">
 						<div class="title">Боевой путь</div>
-
+						<div class="route_map">
+							<img src="images/map.jpg" alt="">
+						</div>
 						<div class="text_block">
 							<p>Но интерактивные прототипы лишь добавляют фракционных разногласий и функционально разнесены на независимые элементы. Значимость этих проблем настолько очевидна, что консультация с широким активом предопределяет высокую востребованность модели развития. Но тщательные исследования конкурентов призваны к ответу.</p>
-						</div>
+						</div>						
 					</section>
 
 					<section class="reward block" id="reward">
@@ -235,27 +235,107 @@
 									<img src="images/reward1.png" alt="">
 								</div>
 								<div class="reward_item-info">
-									
+									<div class="reward_item-title">Орден Отечественной войны II степени</div>
+									<div class="reward_item-number">Номер документа: <span>71</span></div>
+									<div class="reward_item-date">Дата документа: <span>06.04.1985</span></div>
+									<div class="reward_item-author">Автор документа: <span>Министр обороны СССР</span></div>
+									<a href="#" class="reward_item-link">Смотреть документ</a>
+								</div>
+							</div>
+							<div class="reward_item">
+								<div class="reward_item-img">
+									<img src="images/reward2.png" alt="">
+								</div>
+								<div class="reward_item-info">
+									<div class="reward_item-title">Орден Красной Звезды</div>
+									<div class="reward_item-number">Приказ подразделения №: <span>79/н от: 21.12.1943</span></div>
+									<div class="reward_item-author">Издан: <span>194 сд 42 ск</span></div>
+									<div class="reward_item-date">Дата документа: <span>21.12.1943</span></div>									
+									<a href="#" class="reward_item-link modal_btn" data-content="#modal">Смотреть документ</a>
+								</div>
+							</div>
+							<div class="reward_item">
+								<div class="reward_item-img">
+									<img src="images/reward3.png" alt="">
+								</div>
+								<div class="reward_item-info">
+									<div class="reward_item-title">Медаль «За отвагу»</div>
+									<div class="reward_item-number">№: <span>33/н от: 29.12.1943</span></div>
+									<div class="reward_item-author">Издан: <span>954 сп 194 сд 42 ск Белорусского фронта</span></div>
+									<div class="reward_item-date">Дата документа: <span>26.12.1943</span></div>									
+									<a href="#" class="reward_item-link modal_btn" data-content="#modal2">Смотреть документ</a>
+								</div>
+							</div>
+							<div class="reward_item">
+								<div class="reward_item-img">
+									<img src="images/reward4.png" alt="">
+								</div>
+								<div class="reward_item-info">
+									<div class="reward_item-title">Медаль «За боевые заслуги»</div>
+									<div class="reward_item-number">Кто наградил: <span>Президиум ВС СССР</span></div>
+									<div class="reward_item-date">Дата документа: <span>13.06.1952</span></div>									
+									<a href="#" class="reward_item-link">Смотреть документ</a>
 								</div>
 							</div>
 						</div>
-
 					</section>
 
 					<section class="patent block" id="patent">
 						<div class="title">Патенты</div>
-
+						<div class="text_block">
+							<p>Но интерактивные прототипы лишь добавляют фракционных разногласий и функционально разнесены на независимые элементы. Значимость этих проблем настолько очевидна, что консультация с широким активом предопределяет высокую востребованность модели развития. Но тщательные исследования конкурентов призваны к ответу.</p>
+						</div>
+						<div class="patent_items">
+							<div class="patent_item">
+								<div class="patent_item-title">Устройство для контактной стыковой сварки проволоки</div>
+								<div class="patent_item-text">Патент № 608626</div>
+								<div class="patent_item-wrap">
+									<a href="images/patent1.jpg" class="patent_item-img" data-fancybox="gallery">
+										<img src="images/patent1.jpg" alt="">
+									</a>
+									<a href="images/patent2.jpg" class="patent_item-img" data-fancybox="gallery">
+										<img src="images/patent2.jpg" alt="">
+									</a>
+									<a href="images/patent3.jpg" class="patent_item-img" data-fancybox="gallery">
+										<img src="images/patent3.jpg" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="patent_item">
+								<div class="patent_item-title">Устройство для измерения пульсаций давления</div>
+								<div class="patent_item-text">Патент № 489012</div>
+								<div class="patent_item-wrap">
+									<a href="images/patent4.jpg" class="patent_item-img" data-fancybox="gallery">
+										<img src="images/patent4.jpg" alt="">
+									</a>
+									<a href="images/patent5.jpg" class="patent_item-img" data-fancybox="gallery">
+										<img src="images/patent5.jpg" alt="">
+									</a>
+									<a href="images/patent6.jpg" class="patent_item-img" data-fancybox="gallery">
+										<img src="images/patent6.jpg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
 					</section>
+					
+					<footer>
+						<div class="footer_wrap">
+							<div class="footer_text">
+								<p>Никто не забыт!</p>
+								<p>Ничто не забыто!</p>
+							</div>
+							<div class="footer_img">
+								<img src="images/footer_img.png" alt="">
+							</div>
+						</div>							
+					</footer>
 				</div>
 				
 			</div>
 
 
-			<footer>
-				<div class="cont">
-					
-				</div>
-			</footer>
+			
 
 
 			<div class="overlay"></div>
@@ -266,6 +346,36 @@
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
 
+
+		<section class="modal" id="modal">
+			<div class="modal_title">Орден Красной Звезды</div>
+			<div class="modal_date">21.12.1943</div>
+			<div class="modal_img">
+				<img src="images/modal_img1.jpg" alt="">
+			</div>
+			<div class="modal_text">
+				<p>Тов, Помелов в бою за Железную дорогу ЖЛОБИН-КАЛИНКОВИЧ на Участке Юго-Западнее населенного пункта МОРМАЛЬ Гомельской области после артиллерийской подготовки, первым поднялся в атаку и с возгласами За СТАЛИНА! За РОДИНУ! - увлек за собой остальных бойцов взвода, первым ворвался в траншеи противника, уничтожил 3-х немцев и не задерживаясь продолжал продвигаться вперед увлекая за собой бойцов.</p>
+				<p>Тов. Помелов, за проявленную отвагу и мужество в борьбе с немецкими захватчиками, достоин Правительственной награды Красной Звезды!</p>
+			</div>
+			<a href="#" class="modal_link">
+				<span>Смотреть документ на сайте «Память народа»</span>
+			</a>
+		</section>
+
+
+		<section class="modal" id="modal2">
+			<div class="modal_title">Медаль «За отвагу»</div>
+			<div class="modal_date">29.12.1943</div>
+			<div class="modal_img">
+				<img src="images/modal_img2.png" alt="">
+			</div>
+			<div class="modal_text">
+				<p>Командир отделения 1-й стрелковой роты - сержанта ПОМЕЛОВА Анатолия Григорьевича то, что он в бою в районе м. ШАЦИЛКИ Полесской области 26.12.43 г.  при отражении контратаки первый поднял отделение в рукопашную схватку и лично сам убил 6 немцев.</p>
+			</div>
+			<a href="#" class="modal_link">
+				<span>Смотреть документ на сайте «Память народа»</span>
+			</a>
+		</section>
 
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
