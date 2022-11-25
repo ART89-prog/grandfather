@@ -341,6 +341,19 @@
 				
 			</div>
 
+			
+
+			<button class="audio_button" onclick="play_audio('play')">
+				<img src="images/volume.svg" alt="">
+			</button>
+			<button class="audio_button" onclick="play_audio('stop')">
+				<img src="images/volume.svg" alt="">
+			</button>
+
+			<audio class="my_audio" controls preload="none">
+				<source src="audio_vov.mp3" type="audio/mp3">
+			</audio>
+
 			<div class="overlay"></div>
 		</div>
 
@@ -379,7 +392,7 @@
 				<span>Смотреть документ на сайте «Память народа»</span>
 			</a>
 		</section>
-		
+
 
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
