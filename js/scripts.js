@@ -112,6 +112,14 @@ $(() => {
              $(".my_audio").trigger('pause');
              $(".my_audio").prop("currentTime",0);
         }
+      
+      
+      
+      }
+
+      function play() {
+        var audio = new Audio ("../audio_vov.mp3");
+        audio.play();
       }
 
 
