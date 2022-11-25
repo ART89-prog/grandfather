@@ -849,4 +849,5 @@ footer {
     right: 48px;
     top: 830px;
     cursor: pointer;
+    z-index: 25;
 }

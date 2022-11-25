@@ -101,26 +101,9 @@ $(() => {
       });
 
 
-      $(".my_audio").trigger('load');
+    
 
 
-      function play_audio(task) {
-        if(task == 'play'){
-             $(".my_audio").trigger('play');
-        }
-        if(task == 'stop'){
-             $(".my_audio").trigger('pause');
-             $(".my_audio").prop("currentTime",0);
-        }
-      
-      
-      
-      }
-
-      function play() {
-        var audio = new Audio ("../audio_vov.mp3");
-        audio.play();
-      }
 
 
       $('body').on('click', '.modal_btn', function (e) {
@@ -137,4 +120,13 @@ $(() => {
 
 
 
-})
+})     
+
+
+    function play() {
+      var audio = new Audio('../audio_vov.mp3');
+      audio.play();
+    }
+
+
+

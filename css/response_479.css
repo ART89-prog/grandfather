@@ -21,7 +21,7 @@
     .header_name {
         font-size: 25px;
         line-height: 34px;
-        margin-bottom: 8px;
+        margin-bottom: 0px;
         margin-top: 8px;
         padding-bottom: 0px;
     }
@@ -93,6 +93,9 @@
     .modal.fancybox__content>.carousel__button.is-close {
         right: 15px;
         top: 15px;
+    }
+    footer {
+        margin-top: 50px;
     }
 
     
