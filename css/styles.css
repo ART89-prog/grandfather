@@ -493,11 +493,9 @@ header nav {
     align-items: center;
     margin-bottom: 24px;
 }
-header nav .item {
-    background: #F8F3E6;
+header nav .item {    
     border-radius: 4px;
-    margin-right: 12px;
-    padding: 9px 16px;
+    margin-right: 12px;    
 }
 header nav .item a {
     font-weight: 700;
@@ -506,6 +504,9 @@ header nav .item a {
     color: #333333; 
     text-decoration: none; 
     font-family: 'Noto Serif';
+    padding: 9px 16px;
+    background: #F8F3E6;
+    display: block;
 }
 .header_name {
     font-weight: 600;

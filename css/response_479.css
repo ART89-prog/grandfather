@@ -74,8 +74,28 @@
     }
     .reward_item-info {
         margin-left: 0px;
+    }    
+    .modal_title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .modal {
+        padding: 30px 20px;
+    }
+    .modal_img {
+        margin-bottom: 12px;
+        border: 3px solid #F8F2E8;
+    }
+    .modal_text {
+        text-indent: 20px;
+        font-size: 14px;
+    }
+    .modal.fancybox__content>.carousel__button.is-close {
+        right: 15px;
+        top: 15px;
     }
 
+    
 
     
 }

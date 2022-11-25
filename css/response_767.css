@@ -6,18 +6,31 @@
     }
     header nav > * {
         margin-left: 20px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         width: calc(100%/2 - 20px);
     }
     header nav .item {
         margin-right: 0;
+    }
+    header nav .item a {
+        width: 100%;
     }
     .left_block {
         margin: 245px auto 0;
         padding-top: 15px;
     }
     .modal {
-        padding: 40px;
+        padding: 40px 30px;
+    }
+    .modal_text {
+        margin-bottom: 20px;
+    }
+    .header_name {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 23px;
+        margin-top: 11px;
+        padding-bottom: 10px;
     }
 
 }
