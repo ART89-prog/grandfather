@@ -848,4 +848,5 @@ footer {
     position: absolute;
     right: 48px;
     top: 830px;
+    cursor: pointer;
 }
