@@ -5,6 +5,7 @@ $(() => {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
+        adaptiveHeight: true,
         fade: true,
         asNavFor: '.slider-nav'
     });
@@ -16,7 +17,31 @@ $(() => {
         dots: true,
         arrows: false,
         centerMode: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 1450,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 479,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
     });
 
 
@@ -36,7 +61,7 @@ $(() => {
         nextArrow: "<img src='images/arrow-next.svg'>",
         responsive: [
             {
-              breakpoint: 1023,
+              breakpoint: 1650,
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,

@@ -329,53 +329,88 @@ button
 
 
 
-
-
-
-.wrap::before {
-    position: absolute;
-    content: "";
-    background: url(../images/lenta-bg.png);
+body {
+    background: url(../images/bg2.jpg), #EFE8DB;
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.body_img {
+    position: fixed;
     width: 222px;
     height: 121px;
     top: 0;
     right: 0;
+    z-index: 16;
 }
-
-.slider-slide {
+.slider .slider-slide {
     width: 680px;
     height: 760px;
 }
-.slider-slide img {
-    width: 100%;
+.slider .slider-slide img {
     height: 100%;
     border-radius: 20px;
     display: block;
     object-fit: cover;
 }
-.slider-nav {
-    margin-top: -135px;
+.slider .slider-nav {
+    margin-top: -143px;
 }
-.slider-thumbs {
+.slider .slider-thumbs {
     width: 103px;
     height: 103px;
 }
- 
-.slick-list {
+.slider .slick-next {
+    right: 27px;
+    width: 38px;
+    height: 21px;
+    top: 40%;
+}
+.slider .slick-prev {
+    left: 27px;
+    z-index: 2;
+    width: 38px;
+    height: 21px; 
+    top: 40%;   
+}
+.slider .slick-prev:before, 
+.slider .slick-next:before {
+    font-size: 37px;
+}
+.slider .slider-nav .slick-slide {
+    padding: 0 4px;
+}
+.slider .slider-slide {
+    position: relative;
+}
+.slider .slider-slide::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 155px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    z-index: 9;
+    border-radius: 20px;
+} 
+.slider .slick-list {
     position: relative;
     display: block;
     overflow: hidden;
     margin: 0;
     padding: 0;
 }
-.slider-thumbs img {
+.slider .slider-thumbs img {
     width: 100%;
     height: 100%;   
     object-fit: cover;
     display: block;
     border-radius: 5px;
 }
-.slick-current .slider-thumbs {
+.slider .slick-current .slider-thumbs {
     border: 2px solid #EFE8DB;
     border-radius: 5px;
 }
@@ -394,7 +429,7 @@ button
     font-size: 10px;
     line-height: 12px;
     color: rgba(51, 51, 51, 0.8); 
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 .info_item-date {
     position: relative;
@@ -426,16 +461,31 @@ button
     Header
 ------------*/
 .left_block {
-    margin-right: 80px;
+    margin-right: 100px;
     padding-top: 28px;
     width: 680px;
+    position: fixed;
 }
 .right_block {
     padding-top: 28px;
     width: calc(100% - 780px);
+    margin-left: 780px;
 }
 header {
-    position: relative;
+    position: fixed;
+    z-index: 17;
+
+}
+header::after {
+    position: absolute;
+    content: "";
+    background-blend-mode: multiply;
+    backdrop-filter: blur(16px);
+    top: -28px;
+    left: -80px;
+    width: calc(100% + 700px);
+    height: 100%;
+    z-index: -14;
 }
 header nav {
     display: flex;
@@ -446,7 +496,7 @@ header nav .item {
     background: #fff;
     border-radius: 4px;
     margin-right: 12px;
-    padding: 12px 16px;
+    padding: 9px 16px;
 }
 header nav .item a {
     font-weight: 700;
@@ -456,22 +506,28 @@ header nav .item a {
     text-decoration: none; 
     font-family: 'Noto Serif';
 }
+.header_name {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #333333; 
+    margin-bottom: 28px;  
+    margin-top: 24px;
+    padding-bottom: 28px;
+}
 
 
 /* first-section */
 .block {
     margin-bottom: 80px;
 }
-.first-section_name {
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 40px;
-    color: #333333; 
-    margin-bottom: 28px;   
-}
 .first-section_info {
-    margin-bottom: 32px;
+    margin-bottom: 29px;
     position: relative;
+    margin-top: 172px;
+}
+.first-section_info.nc2 {
+    margin-top: 0;
 }
 .first-section_title {
     font-weight: 600;
@@ -485,7 +541,7 @@ header nav .item a {
     font-size: 16px;
     line-height: 24px;
     color: #333333;
-    margin-bottom: 8px;
+    margin-bottom: 1px;
 }
 .first-section_info.nc2 .first-section_text {
     width: calc(100% - 310px);
@@ -531,6 +587,7 @@ header nav .item a {
 }
 .first_slider-item_img img {
     margin: 0 auto;
+    width: 100%;
 }
 .slider-arrows img:first-child {
     margin-right: 13px;
@@ -586,12 +643,10 @@ header nav .item a {
 }
 .route_map {
     margin-bottom: 24px;
-    width: 764px;
-    height: 372px;
 }
 .route_map img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -663,10 +718,6 @@ header nav .item a {
 .patent {
     max-width: 764px;
 }
-.patent_items {
-}
-.patent_item {
-}
 .patent_item-title {
     font-weight: 500;
     font-size: 20px;
@@ -695,7 +746,7 @@ header nav .item a {
 }
 .patent_item-img img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 .fancybox__container.is-animated[aria-hidden=false] .fancybox__thumbs {

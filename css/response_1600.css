@@ -1,0 +1,57 @@
+@media print, (max-width: 1600px) {
+
+    :root {
+        --font_size: 15px;
+        --font_size_title: 30px;
+    }
+    html.custom_scroll ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+    .slick-slider {
+        width: 430px;
+        height: 594px;    
+    }
+    .slider .slider-slide {
+        width: 430px !important;
+        height: 594px;        
+    }
+    .slider .slider-thumbs {
+        width: 80px;
+        height: 80px;
+    } 
+    .slider .slick-list {
+        width: 430px;
+        margin-right: 50px;
+    }
+    .slider .slider-nav .slick-slide {
+        padding: 0 3px;        
+    }
+    .slider .slider-nav {
+        margin-top: -106px;
+        overflow: hidden;
+    }
+    .left_block {
+        width: 100%;
+        margin-right: 50px;
+    }
+    .right_block {
+        padding-top: 28px;
+        width: calc(100% - 578px);
+        margin-left: 578px;
+    }
+    header::after {
+        top: -28px;
+        left: -36px;
+        width: calc(100% + 589px);
+    }
+    .block {
+        margin-bottom: 60px;
+    }
+
+
+
+
+
+
+}
