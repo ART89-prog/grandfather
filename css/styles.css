@@ -360,6 +360,7 @@ body {
 .slider .slider-thumbs {
     width: 103px;
     height: 103px;
+    cursor: pointer;
 }
 .slider .slick-next {
     right: 27px;
@@ -595,6 +596,9 @@ header nav .item a {
 .first_slider-item_img img {
     width: 100%;
     height: 100%;
+}
+.slider-arrows img {
+    cursor: pointer;
 }
 .slider-arrows img:first-child {
     margin-right: 13px;
