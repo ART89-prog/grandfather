@@ -246,7 +246,7 @@
 									<div class="reward_item-number">Номер документа: <span>71</span></div>
 									<div class="reward_item-date">Дата документа: <span>06.04.1985</span></div>
 									<div class="reward_item-author">Автор документа: <span>Министр обороны СССР</span></div>
-									<a href="#" class="reward_item-link">Смотреть документ</a>
+									<a href="#" class="reward_item-link modal_btn" data-content="#modal">Смотреть документ</a>
 								</div>
 							</div>
 							<div class="reward_item">
@@ -281,7 +281,7 @@
 									<div class="reward_item-title">Медаль «За боевые заслуги»</div>
 									<div class="reward_item-number">Кто наградил: <span>Президиум ВС СССР</span></div>
 									<div class="reward_item-date">Дата документа: <span>13.06.1952</span></div>									
-									<a href="#" class="reward_item-link">Смотреть документ</a>
+									<a href="#" class="reward_item-link modal_btn" data-content="#modal">Смотреть документ</a>
 								</div>
 							</div>
 						</div>
@@ -343,10 +343,25 @@
 
 			
 
-			<button class="audio_button" onclick="play()">
+			<!-- <button class="audio_button" onclick="play()">
 				<img src="images/volume.svg" alt="">
-			</button>
+			</button> -->
 			
+
+			<!-- <div class="button button--play" onclick="play()">
+				<div class="button__shape button__shape--one"></div>
+				<div class="button__shape button__shape--two"></div>
+			</div> -->
+
+
+			<audio class="my_audio" controls preload="none">
+				<source src="audio_vov.mp3" type="audio/mp3">
+			</audio>
+
+			<div class="button button--play">
+				<button class="button__shape button__shape--one" onclick="play_audio('play')"></buttonv>
+				<button class="button__shape button__shape--two" onclick="play_audio('pause')"></button>
+			</div>
 
 			
 

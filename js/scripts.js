@@ -123,10 +123,27 @@ $(() => {
 })     
 
 
-    function play() {
-      var audio = new Audio('../audio_vov.mp3');
-      audio.play();
-    }
+    // function play() {
+    //   var audio = new Audio('../audio_vov.mp3');
+    //   audio.play();
+    // }
+
+
+    const playButton = document.querySelector('.button--play');
+
+    playButton.addEventListener('click', () => {
+      console.log('yo')
+      playButton.classList.toggle('button--active')
+    })
 
 
 
+    function play_audio(task) {
+      if(task == 'play'){
+           $(".my_audio").trigger('play');
+      }
+      if(task == 'stop'){
+           $(".my_audio").trigger('pause');
+           $(".my_audio").prop("currentTime",0);
+      }
+ }

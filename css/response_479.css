@@ -97,6 +97,15 @@
     footer {
         margin-top: 50px;
     }
+    .slider .slider-thumbs img {
+        height: auto;
+    }
+    .slider .slider-thumbs {
+        height: auto;
+    }
+    footer {
+        text-align: center;
+    }
 
     
 
