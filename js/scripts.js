@@ -124,7 +124,7 @@ $(() => {
 
 
 
-    audioObj = new Audio('http://test.raten.mcdir.ru/grandfather-main/audio_vov.mp3');       
+    audioObj = new Audio('audio_vov.mp3');       
     $('body').on('click', '.button--play', function(e) {        
         $(this).toggleClass("button--active");
         if($(this).hasClass("button--active"))
