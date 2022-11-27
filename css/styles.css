@@ -856,7 +856,9 @@ footer {
     z-index: 25;
 }
 
-
+.my_audio {
+    display: none;
+}
 
 .button {
     width: 60px;

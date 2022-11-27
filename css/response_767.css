@@ -32,5 +32,17 @@
         margin-top: 11px;
         padding-bottom: 10px;
     }
+    .button--play {
+        display: none;
+    }
+    .patent_item {
+        margin-bottom: 45px;        
+    }
+    .patent_item:last-child {
+        margin-bottom: 0px;        
+    }
+
+
+    
 
 }
