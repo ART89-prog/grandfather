@@ -117,7 +117,7 @@
         text-align: center;
     }
     .left_block {
-        margin: 195px auto 0;
+        margin: 100px auto 0;
     }
     .reward_item-number {
         font-size: 15px;
@@ -132,6 +132,10 @@
     .patent_item-text {
         font-size: 15px;
         line-height: 24px;
+    }
+    .body_img {
+        width: 133px;
+        height: 67px;
     }
 
     

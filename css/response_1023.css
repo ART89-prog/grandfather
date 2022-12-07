@@ -22,7 +22,7 @@
         left: 0px;
     }
     header nav {
-        justify-content: end;
+        justify-content: space-around;
         margin-right: 20px;
     }
     .header_name {

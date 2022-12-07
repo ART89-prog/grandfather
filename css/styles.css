@@ -900,3 +900,7 @@ footer {
     -webkit-clip-path: polygon(50% 15%, 100% 15%, 100% 85%, 50% 85%);
     transform: translateX(0px);
 }
+
+.header-mob {
+    display: none;
+}
