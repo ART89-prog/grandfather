@@ -30,6 +30,7 @@
     }
     .info_items {
         margin-top: 0;
+        max-width: 310px;
     }
     .right_block {
         margin-top: 0;
@@ -134,6 +135,8 @@
     }
 
     
-
+    .reward, .patent .title{
+        text-align: center;
+    }
     
 }
